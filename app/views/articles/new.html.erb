@@ -1,0 +1,15 @@
+<h1>Create Post</h1>
+<%= form_with scope: :articles, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :body%><br> 
+    <%= form.text_area :body%><br> 
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
